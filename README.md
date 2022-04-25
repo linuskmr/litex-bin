@@ -25,16 +25,18 @@ Arguments:
     	Markdown file to convert to PDF
 ```
 
+> Installation successfull, but command `litex` can not be found? If the executable is in `~/go/bin`, your GOPATH might not be configured.
+
 ## Example
 
 An example letter. The result will be written to `example_letter.md.pdf`.
 
 ```
-./litex -input example_letter.md -css letter.css
+litex -input example_letter.md -css letter.css
 ```
 
 An example document. The result will be written to `example_document.md.pdf`.
 
 ```
-./litex -input example_document.md -css document.css
+litex -input example_document.md -css document.css
 ```

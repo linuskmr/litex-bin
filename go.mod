@@ -1,4 +1,4 @@
-module litex
+module github.com/linuskmr/litex
 
 go 1.17
 

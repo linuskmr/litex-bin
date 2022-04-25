@@ -1,0 +1,51 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap'); */
+
+@page { size: A4 }
+
+html {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 10pt;
+    line-height: 1.25;
+}
+
+body {
+    margin: 4.5cm 2.5cm 2.5cm 2.0cm;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: inherit;
+    margin-bottom: 2em;
+}
+
+header {
+    position: absolute;
+    top: 5.5cm;
+    left: 2cm;
+    height: 3.5cm;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    position: absolute;
+    top: 9cm;
+    left: 2cm;
+    /* text-align: justify; */
+}
+
+p {
+    margin: 1.5em 0;
+}
+
+address {
+    font-style: normal;
+    font-size: 8pt;
+}
+
+address.to {
+    width: 9cm;
+}
+
+address.from {
+    padding-left: 150px;
+}

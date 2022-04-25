@@ -1,0 +1,76 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap'); */
+
+@page { size: A4 }
+
+/* Default light mode */
+:root {
+    --bg-color: white;
+    --fg-color: black;
+    --secondary-color: #e3e3e3;
+    --link-color: #58a6ff;
+}
+
+/* Dark mode if desired */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: rgb(13, 17, 23);
+        --fg-color: rgb(201, 209, 217);
+        --secondary-color: #333;
+        --link-color: #58a6ff;
+    }
+}
+
+html {
+    font-family: 'Fira Sans', sans-serif;
+    /* font-size: 10pt; */
+    /* line-height: 1.25; */
+}
+
+body {
+    margin: 1.5cm;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+pre {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+code {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid var(--secondary-color);
+}
+
+td, th {
+    padding: 5px;
+}
+
+blockquote {
+    border-left: 5px solid var(--secondary-color);
+    padding-left: 10px;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}

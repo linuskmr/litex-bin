@@ -8,7 +8,7 @@ Install go.
 
 Install chromium-browser, for example with `sudo apt-get install chromium-browser`. It is used for rendering the PDF.
 
-Install litex `go get git@github.com:linuskmr/litex.git`
+Install litex `go install github.com/linuskmr/litex@latest`
 
 ## Usage
 

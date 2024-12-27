@@ -2,6 +2,16 @@
 
 LiTeX is an alternative to LaTeX. LiTeX creates a PDF from a markdown file (which may contain regular HTML as well) according to a CSS stylesheet.
 
+Alternativly, simply use **pandoc**:
+
+```bash
+$ pandoc document.md -s -c style.css -o document.pdf --pdf-engine=weasyprint
+# or, with auto-reload
+$ ls document.md | entr -c pandoc document.md -s -c style.css -o document.pdf --pdf-engine=weasyprint
+```
+
+(likely requires `sudo apt install weasyprint`)
+
 ## Installation
 
 Install go.
